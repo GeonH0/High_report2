@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>jQuery Mobile</title>
@@ -18,12 +18,23 @@
       }
 
       function onDeviceButtonClick() {
-      var deviceInfo = "Device Name: " + device.name + "\n" +
-                       "Device Cordova: " + device.cordova + "\n" +
-                       "Device Platform: " + device.platform + "\n" +
-                       "Device UUID: " + device.uuid + "\n" +
-                       "Device Version: " + device.version + "\n";
-      alert(deviceInfo);
+        var deviceInfo =
+          "Device Name: " +
+          device.name +
+          "\n" +
+          "Device Cordova: " +
+          device.cordova +
+          "\n" +
+          "Device Platform: " +
+          device.platform +
+          "\n" +
+          "Device UUID: " +
+          device.uuid +
+          "\n" +
+          "Device Version: " +
+          device.version +
+          "\n";
+        alert(deviceInfo);
       }
     </script>
 
@@ -59,312 +70,311 @@
         height: auto;
       }
     </style>
-</head>
+  </head>
 
-<body>
-<div data-theme="b">
-    <div data-role="page" id="home">
+  <body>
+    <div data-theme="b">
+      <div data-role="page" id="home">
         <div data-role="header" data-theme="b">
-            <h1>네이버 소개</h1>
+          <h1>네이버 소개</h1>
         </div>
         <div data-role="content" style="text-align: center">
-            <img src="사옥1.png" width="160" height="120" />
-            <ul data-role="listview" data-inset="true">
-                <li><a href="#intro">네이버소개</a></li>
-                <li>
-                    <a href="#businessEthics" data-rel="true">네이버 기업윤리 규범</a>
-                </li>
-                <li><a href="#movie" data-rel="dialog">네이버 광고영상</a></li>
-                <li>
-                    <a href="#wizard3-1" data-rel="dialog">네이버 서비스</a>
-                </li>
-                <li><a href="#gallery">네이버사진</a></li>
-
-            </ul>
-            <button id="deviceButton">Device</button>
+          <img src="n1.png" width="160" height="120" />
+          <ul data-role="listview" data-inset="true">
+            <li><a href="#intro">네이버소개</a></li>
+            <li>
+              <a href="#businessEthics" data-rel="true">네이버 기업윤리 규범</a>
+            </li>
+            <li><a href="#movie" data-rel="dialog">네이버 광고영상</a></li>
+            <li>
+              <a href="#wizard3-1" data-rel="dialog">네이버 서비스</a>
+            </li>
+            <li><a href="#gallery">네이버사진</a></li>
+          </ul>
+          <button id="deviceButton">Device</button>
         </div>
         <div data-role="footer" data-position="fixed" data-theme="b">
-            <h1>NAVER</h1>
+          <h1>NAVER</h1>
         </div>
-    </div>
+      </div>
 
-    <div data-role="page" id="intro" data-theme="b">
+      <div data-role="page" id="intro" data-theme="b">
         <div data-role="header" data-theme="b">
-            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
-            <h1>네이버 소개</h1>
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <h1>네이버 소개</h1>
         </div>
         <div data-role="content">
-            <div style="text-align: center">
-                <img src="사옥1.png" width="160" height="120" />
+          <div style="text-align: center">
+            <img src="n1.png" width="160" height="120" />
+          </div>
+          <div
+            data-role="collapsible-set"
+            data-theme="b"
+            data-content-theme="e"
+          >
+            <div data-role="collapsible" data-collapsed="false">
+              <h3>네이버 소개</h3>
+              <p>
+                네이버(주)는 글로벌 ICT 기업으로서 한국 최대 검색포털 네이버를
+                서비스하고 있고, 그 계열사에서 모바일 메신저 라인, 동영상 카메라
+                스노우, 디지털 만화 서비스 네이버웹툰, 메타버스 서비스 제페토
+                등을 서비스하고 있습니다. 또한, 네이버(주)는 인공지능, 로보틱스,
+                모빌리티 등 미래 기술에 대한 지속적인 연구개발을 통해 기술
+                플랫폼의 변화와 혁신을 추구하며 세계 각국의 수많은 이용자와
+                다양한 파트너들이 함께 성장할 수 있도록 노력하고 있습니다.
+              </p>
             </div>
-            <div
-                    data-role="collapsible-set"
-                    data-theme="b"
-                    data-content-theme="e"
-            >
-                <div data-role="collapsible" data-collapsed="false">
-                    <h3>네이버 소개</h3>
-                    <p>
-                        네이버(주)는 글로벌 ICT 기업으로서 한국 최대 검색포털 네이버를
-                        서비스하고 있고, 그 계열사에서 모바일 메신저 라인, 동영상 카메라
-                        스노우, 디지털 만화 서비스 네이버웹툰, 메타버스 서비스 제페토
-                        등을 서비스하고 있습니다. 또한, 네이버(주)는 인공지능, 로보틱스,
-                        모빌리티 등 미래 기술에 대한 지속적인 연구개발을 통해 기술
-                        플랫폼의 변화와 혁신을 추구하며 세계 각국의 수많은 이용자와
-                        다양한 파트너들이 함께 성장할 수 있도록 노력하고 있습니다.
-                    </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>COMPANY PROFILE</h3>
-                    <table class="table">
-                        <colgroup>
-                            <col style="width: 160px" />
-                            <col style="max-width: 800px" />
-                        </colgroup>
-                        <tbody>
-                        <tr>
-                            <th scope="row">설립연도</th>
-                            <td>1999년 6월</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">본사 위치</th>
-                            <td>경기도 성남시 분당구</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">주요서비스</th>
-                            <td>온라인 검색포털, 모바일 메신저 플랫폼</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">주요사업</th>
-                            <td>온라인 광고 및 콘텐츠 사업</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">해외 계열 법인</th>
-                            <td>
-                                일본, 미국, 프랑스, 중국, 베트남, 대만, 태국, 인도네시아
-                                외
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">매출액</th>
-                            <td>6조 818억 원 (2021년)</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">전체인력</th>
-                            <td>4,595명 (본사 기준, 2021년 기준)</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div data-role="collapsible">
+              <h3>COMPANY PROFILE</h3>
+              <table class="table">
+                <colgroup>
+                  <col style="width: 160px" />
+                  <col style="max-width: 800px" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">설립연도</th>
+                    <td>1999년 6월</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">본사 위치</th>
+                    <td>경기도 성남시 분당구</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">주요서비스</th>
+                    <td>온라인 검색포털, 모바일 메신저 플랫폼</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">주요사업</th>
+                    <td>온라인 광고 및 콘텐츠 사업</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">해외 계열 법인</th>
+                    <td>
+                      일본, 미국, 프랑스, 중국, 베트남, 대만, 태국, 인도네시아
+                      외
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">매출액</th>
+                    <td>6조 818억 원 (2021년)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">전체인력</th>
+                    <td>4,595명 (본사 기준, 2021년 기준)</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
+          </div>
         </div>
         <div data-role="footer" data-position="fixed" data-theme="b">
-            <h1>NAVER</h1>
+          <h1>NAVER</h1>
         </div>
-    </div>
-    <div data-role="page" id="businessEthics" data-theme="b">
+      </div>
+      <div data-role="page" id="businessEthics" data-theme="b">
         <div data-role="header" data-theme="b">
-            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
-            <h1>네이버 기업윤리 규범</h1>
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <h1>네이버 기업윤리 규범</h1>
         </div>
         <div data-role="contents">
-            <ul class="info_container">
-                <li class="info_list employees">
-                    <dl>
-                        <dt class="info_list_title">임직원</dt>
-                        <dd class="info_list_text">
-                            다양성을 인정하고 서로 존중하며, 임직원의 능력이 최대한
-                            발휘되도록 책임을 다하는 기업문화와 최상의 근무 환경을
-                            조성합니다. 모든 임직원을 능력과 성과에 따라 합리적으로
-                            대우하며, 차별 없이 평등하게 일할 수 있는 기회를 제공합니다.
-                        </dd>
-                    </dl>
-                </li>
-                <li class="info_list partner">
-                    <dl>
-                        <dt class="info_list_title">파트너ㆍ경쟁사</dt>
-                        <dd class="info_list_text">
-                            파트너사와의 모든 거래에 대하여 합리적인 거래조건을 보장하며
-                            장기적 관점에서 상생적인 인터넷 생태계를 함께 조성해 나갑니다.
-                            경쟁사와는 상호 존중하며 공정한 거래질서를 유지하고, 선의의
-                            경쟁을 통해 고객의 후생을 높일 수 있는 방향으로 함께 발전해
-                            나갑니다.
-                        </dd>
-                    </dl>
-                </li>
-                <li class="info_list society">
-                    <dl>
-                        <dt class="info_list_title">사회</dt>
-                        <dd class="info_list_text">
-                            기업시민으로서 지역사회의 법규 및 사회적 가치관을 존중하며
-                            다양한 사회공헌 활동 등을 통해 사회적 책임을 다합니다. 회사의
-                            이익과 사회적 가치가 상충될 때는 사회적 가치를 우선적으로
-                            고려합니다.
-                        </dd>
-                    </dl>
-                </li>
-                <li class="info_list client">
-                    <dl>
-                        <dt class="info_list_title">고객</dt>
-                        <dd class="info_list_text">
-                            고객이 원하는 가치를 경영활동의 최우선 판단 기준으로 여기며,
-                            고객에게 도움이 되는 가치를 끊임없이 만듭니다. 고객에게
-                            정직함으로써 신뢰를 받을 수 있도록 노력하고 고객의 의견에 항상
-                            귀 기울입니다.
-                        </dd>
-                    </dl>
-                </li>
-                <li class="info_list stockholder">
-                    <dl>
-                        <dt class="info_list_title">주주</dt>
-                        <dd class="info_list_text">
-                            건실한 경영활동을 통해 정당하고 안정적인 이익을 실현함으로써
-                            주주의 가치를 만듭니다. 주주와의 신뢰를 유지하기 위하여
-                            투명성을 제고하고 각종 경영정보를 제 때에 제공합니다.
-                        </dd>
-                    </dl>
-                </li>
-            </ul>
+          <ul class="info_container">
+            <li class="info_list employees">
+              <dl>
+                <dt class="info_list_title">임직원</dt>
+                <dd class="info_list_text">
+                  다양성을 인정하고 서로 존중하며, 임직원의 능력이 최대한
+                  발휘되도록 책임을 다하는 기업문화와 최상의 근무 환경을
+                  조성합니다. 모든 임직원을 능력과 성과에 따라 합리적으로
+                  대우하며, 차별 없이 평등하게 일할 수 있는 기회를 제공합니다.
+                </dd>
+              </dl>
+            </li>
+            <li class="info_list partner">
+              <dl>
+                <dt class="info_list_title">파트너ㆍ경쟁사</dt>
+                <dd class="info_list_text">
+                  파트너사와의 모든 거래에 대하여 합리적인 거래조건을 보장하며
+                  장기적 관점에서 상생적인 인터넷 생태계를 함께 조성해 나갑니다.
+                  경쟁사와는 상호 존중하며 공정한 거래질서를 유지하고, 선의의
+                  경쟁을 통해 고객의 후생을 높일 수 있는 방향으로 함께 발전해
+                  나갑니다.
+                </dd>
+              </dl>
+            </li>
+            <li class="info_list society">
+              <dl>
+                <dt class="info_list_title">사회</dt>
+                <dd class="info_list_text">
+                  기업시민으로서 지역사회의 법규 및 사회적 가치관을 존중하며
+                  다양한 사회공헌 활동 등을 통해 사회적 책임을 다합니다. 회사의
+                  이익과 사회적 가치가 상충될 때는 사회적 가치를 우선적으로
+                  고려합니다.
+                </dd>
+              </dl>
+            </li>
+            <li class="info_list client">
+              <dl>
+                <dt class="info_list_title">고객</dt>
+                <dd class="info_list_text">
+                  고객이 원하는 가치를 경영활동의 최우선 판단 기준으로 여기며,
+                  고객에게 도움이 되는 가치를 끊임없이 만듭니다. 고객에게
+                  정직함으로써 신뢰를 받을 수 있도록 노력하고 고객의 의견에 항상
+                  귀 기울입니다.
+                </dd>
+              </dl>
+            </li>
+            <li class="info_list stockholder">
+              <dl>
+                <dt class="info_list_title">주주</dt>
+                <dd class="info_list_text">
+                  건실한 경영활동을 통해 정당하고 안정적인 이익을 실현함으로써
+                  주주의 가치를 만듭니다. 주주와의 신뢰를 유지하기 위하여
+                  투명성을 제고하고 각종 경영정보를 제 때에 제공합니다.
+                </dd>
+              </dl>
+            </li>
+          </ul>
         </div>
         <div data-role="footer" data-position="fixed" data-theme="b">
-            <h1>NAVER</h1>
+          <h1>NAVER</h1>
         </div>
-    </div>
+      </div>
 
-    <div data-role="page" id="movie" data-theme="b">
+      <div data-role="page" id="movie" data-theme="b">
         <div data-role="header" data-position="fixed" data-theme="b">
-            <h1>광고영상</h1>
+          <h1>광고영상</h1>
         </div>
         <div data-role="content">
-            <div class="ui-bar ui-bar-a">
-                키워드로 돌아보는 2022, 네이버 연말결산
-            </div>
-            <br />
-            <li>
-                <iframe
-                        width="100%"
-                        height="240"
-                        src="2022naver.mp4?autoplay=1&mute=1 "
-                ></iframe>
-            </li>
-            <br />
-            <div class="ui-bar ui-bar-a">BAND 10주년</div>
-            <br />
-            <li>
-                <iframe
-                        width="100%"
-                        height="240"
-                        src="band10.mp4?autoplay=1&mute=1 "
-                ></iframe>
-            </li>
+          <div class="ui-bar ui-bar-a">
+            키워드로 돌아보는 2022, 네이버 연말결산
+          </div>
+          <br />
+          <li>
+            <iframe
+              width="100%"
+              height="240"
+              src="2022naver.mp4?autoplay=1&mute=1 "
+            ></iframe>
+          </li>
+          <br />
+          <div class="ui-bar ui-bar-a">BAND 10주년</div>
+          <br />
+          <li>
+            <iframe
+              width="100%"
+              height="240"
+              src="band10.mp4?autoplay=1&mute=1 "
+            ></iframe>
+          </li>
         </div>
         <div data-role="footer" data-theme="b"></div>
-    </div>
+      </div>
 
-    <div data-role="page" id="wizard3-1">
+      <div data-role="page" id="wizard3-1">
         <div data-role="header">
-            <h1>네이버</h1>
+          <h1>네이버</h1>
         </div>
         <div data-role="content">
-            <img src="naver.png" alt="" />
+          <img src="naver.png" alt="" />
 
-            <br />
+          <br />
 
-            <p>
-                네이버 모바일은 사용자의 검색 의도와 맥락을 깊이 이해하는 검색
-                서비스를 중심으로 개인의 다양한 관심사를 이어갈 수 있는 콘텐츠
-                주제판을 제공하고 있습니다. 또한 매일 3천만 명에 이르는 다양한
-                사용자의 생각과 관심사를 연결하고, 새로운 기회를 만들어가는 플랫폼이
-                되고자 크고 작은 변화들을 이어가고 있습니다.
-            </p>
+          <p>
+            네이버 모바일은 사용자의 검색 의도와 맥락을 깊이 이해하는 검색
+            서비스를 중심으로 개인의 다양한 관심사를 이어갈 수 있는 콘텐츠
+            주제판을 제공하고 있습니다. 또한 매일 3천만 명에 이르는 다양한
+            사용자의 생각과 관심사를 연결하고, 새로운 기회를 만들어가는 플랫폼이
+            되고자 크고 작은 변화들을 이어가고 있습니다.
+          </p>
         </div>
         <div data-role="footer">
-            <a href="#home" data-direction="reverse">이전</a>
-            <a href="#wizard3-2" data-rel="dialog" data-transition="slide"
+          <a href="#home" data-direction="reverse">이전</a>
+          <a href="#wizard3-2" data-rel="dialog" data-transition="slide"
             >다음</a
-            >
+          >
         </div>
-    </div>
+      </div>
 
-    <div data-role="page" id="wizard3-2">
+      <div data-role="page" id="wizard3-2">
         <div data-role="header">
-            <h1>라인</h1>
+          <h1>라인</h1>
         </div>
         <div data-role="content">
-            <img src="Line.png" alt="" />
-            <br />
-            <p>
-                2011년 메신저 앱으로 시작한 LINE은 전 세계에서 가장 빠르게 성장한
-                글로벌 메신저 플랫폼으로, 이제는 메신저를 넘어 사람과 사람, 기업,
-                서비스를 연결하는 허브 역할을 하고 있습니다. LINE은 더 많은 글로벌
-                사용자에게 편리한 일상생활의 경험을 제공하기 위해 AI, 핀테크,
-                간편결제, 음악, 게임, 여행, 배달 서비스 등 다양한 앱을 연결하며
-                온라인과 오프라인 경계를 넘나들고 있습니다.
-            </p>
+          <img src="Line.png" alt="" />
+          <br />
+          <p>
+            2011년 메신저 앱으로 시작한 LINE은 전 세계에서 가장 빠르게 성장한
+            글로벌 메신저 플랫폼으로, 이제는 메신저를 넘어 사람과 사람, 기업,
+            서비스를 연결하는 허브 역할을 하고 있습니다. LINE은 더 많은 글로벌
+            사용자에게 편리한 일상생활의 경험을 제공하기 위해 AI, 핀테크,
+            간편결제, 음악, 게임, 여행, 배달 서비스 등 다양한 앱을 연결하며
+            온라인과 오프라인 경계를 넘나들고 있습니다.
+          </p>
         </div>
         <div data-role="footer">
-            <a href="#wizard3-1" data-direction="reverse">이전</a>
-            <a href="#wizard3-3" data-rel="dialog" data-transition="slide"
+          <a href="#wizard3-1" data-direction="reverse">이전</a>
+          <a href="#wizard3-3" data-rel="dialog" data-transition="slide"
             >다음</a
-            >
+          >
         </div>
-    </div>
+      </div>
 
-    <div data-role="page" id="wizard3-3">
+      <div data-role="page" id="wizard3-3">
         <div data-role="header">
-            <h1>파파고</h1>
+          <h1>파파고</h1>
         </div>
         <div data-role="content">
-            <img src="Paapgo.png" alt="" />
-            <br />
+          <img src="Paapgo.png" alt="" />
+          <br />
 
-            <p>
-                네이버 자체 기술로 만들어진 파파고(papago)는 음성인식, 음성합성,
-                기계번역, 문자인식 등의 기술이 집약된 자동통역 앱으로 사용자들이
-                해외여행이나 외국인과 만나는 상황에서 효과적으로 사용할 수 있습니다.
-                특히 인공신경망 번역(NMT : Neural Machine Translation) 기술이
-                적용됨으로써 기존 구 단위로 쪼개 번역했던 방식이 문장을 통째로
-                번역하는 것으로 바뀌어 더욱 정확하고 문장 맥락에 맞는 번역 서비스를
-                제공합니다.
-            </p>
+          <p>
+            네이버 자체 기술로 만들어진 파파고(papago)는 음성인식, 음성합성,
+            기계번역, 문자인식 등의 기술이 집약된 자동통역 앱으로 사용자들이
+            해외여행이나 외국인과 만나는 상황에서 효과적으로 사용할 수 있습니다.
+            특히 인공신경망 번역(NMT : Neural Machine Translation) 기술이
+            적용됨으로써 기존 구 단위로 쪼개 번역했던 방식이 문장을 통째로
+            번역하는 것으로 바뀌어 더욱 정확하고 문장 맥락에 맞는 번역 서비스를
+            제공합니다.
+          </p>
         </div>
         <div data-role="footer">
-            <a href="#wizard3-2" data-direction="reverse">이전</a>
-            <a href="#home">처음</a>
+          <a href="#wizard3-2" data-direction="reverse">이전</a>
+          <a href="#home">처음</a>
         </div>
-    </div>
+      </div>
 
-    <div data-role="page" id="gallery" data-theme="b">
+      <div data-role="page" id="gallery" data-theme="b">
         <div data-role="header" data-position="fixed" data-theme="b">
-            <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
-            <h1>네이버 보도자료</h1>
+          <a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+          <h1>네이버 보도자료</h1>
         </div>
         <div data-role="content">
-            <ul class="picture">
-                <li>
-                    <a href="사옥1.png" rel="external"><img src="사옥1.png" /></a>
-                </li>
-                <li>
-                    <a href="사옥2.png" rel="external"><img src="사옥2.png" /></a>
-                </li>
-                <li>
-                    <a href="사옥3.png" rel="external"><img src="사옥3.png" /></a>
-                </li>
-                <li>
-                    <a href="사옥4.png" rel="external"><img src="사옥4.png" /></a>
-                </li>
-                <li>
-                    <a href="사옥5.png" rel="external"><img src="사옥5.png" /></a>
-                </li>
-                <li>
-                    <a href="사옥6.png" rel="external"><img src="사옥6.png" /></a>
-                </li>
-            </ul>
+          <ul class="picture">
+            <li>
+              <a href="n1.png" rel="external"><img src="n1.png" /></a>
+            </li>
+            <li>
+              <a href="n2.png" rel="external"><img src="n2.png" /></a>
+            </li>
+            <li>
+              <a href="n3.png" rel="external"><img src="n3.png" /></a>
+            </li>
+            <li>
+              <a href="n4.png" rel="external"><img src="n4.png" /></a>
+            </li>
+            <li>
+              <a href="n5.png" rel="external"><img src="n5.png" /></a>
+            </li>
+            <li>
+              <a href="n6.png" rel="external"><img src="n6.png" /></a>
+            </li>
+          </ul>
         </div>
         <div data-role="footer" data-position="fixed" data-theme="b">
-            <h1>NAVER</h1>
+          <h1>NAVER</h1>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
