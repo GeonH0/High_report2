@@ -9,6 +9,7 @@
     <script src="./js/jquery.mobile-1.4.5.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="cordova.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script type="text/javascript">
       document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -92,6 +93,7 @@
             <li><a href="#gallery">네이버사진</a></li>
           </ul>
           <button id="deviceButton">Device</button>
+
         </div>
         <div data-role="footer" data-position="fixed" data-theme="b">
           <h1>NAVER</h1>
@@ -165,6 +167,39 @@
                   </tr>
                 </tbody>
               </table>
+              <canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+
+              <script>
+      var xValues = [
+        "최대주주(국민연금)",
+        "외국인",
+        "국내기관(국민연금 제외)",
+        "개인 및 기타 법인",
+        "자사주",
+      ];
+      var yValues = [8.9, 57.3, 11, 13.7, 9.0];
+      var barColors = ["red", "green", "blue", "orange", "brown"];
+
+      new Chart("myChart", {
+        type: "bar",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: "Naver 기업지배구조",
+          },
+        },
+      });
+    </script>
             </div>
           </div>
         </div>
@@ -251,21 +286,17 @@
           </div>
           <br />
           <li>
-            <iframe
-              width="100%"
-              height="240"
-              src="2022naver.mp4?autoplay=1&mute=1 "
-            ></iframe>
+            <video controls width="100%" preload="metadata">
+              <source src="2022naver.mp4" type="video/mp4" />
+            </video>
           </li>
           <br />
           <div class="ui-bar ui-bar-a">BAND 10주년</div>
           <br />
           <li>
-            <iframe
-              width="100%"
-              height="240"
-              src="band10.mp4?autoplay=1&mute=1 "
-            ></iframe>
+            <video controls width="100%" preload="metadata">
+              <source src="band10.mp4" type="video/mp4" />
+            </video>
           </li>
         </div>
         <div data-role="footer" data-theme="b"></div>
