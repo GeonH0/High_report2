@@ -11,6 +11,8 @@
 
 ## 네이버 소개 페이지
 ![스크린샷 2023-03-31 오전 10 09 54](https://user-images.githubusercontent.com/88571960/228998661-2d6ae8dc-69f0-4959-a75a-607ff89df415.png)
+<img width="232" alt="image" src="https://user-images.githubusercontent.com/88571960/229033611-f908a291-5b18-4dd5-ae21-2d915991d79c.png">
+
 
 ## 네이버 기업의윤리 규범 페이지
 ![스크린샷 2023-03-31 오전 10 10 08](https://user-images.githubusercontent.com/88571960/228998666-8811d3a6-faea-4468-9cf6-24a479bbcd24.png)
